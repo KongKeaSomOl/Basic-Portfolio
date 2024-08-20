@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Site</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        color: #333;
+      }
+
+      header {
+        background: #f8f9fa;
+        color: #333;
+        padding: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1000;
+      }
+
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-link {
+        color: #495057 !important;
+        font-weight: 500;
+        padding: 10px 15px;
+        border-radius: 25px;
+        transition: background-color 0.3s, transform 0.3s, color 0.3s;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+
+      .nav-link:hover,
+      .nav-link:focus {
+        background-color: #e9ecef;
+        color: #007bff !important;
+        transform: scale(1.05);
+      }
+
+      .nav-link.active {
+        background-color: #e9ecef;
+        color: #007bff !important;
+      }
+
+      .container-fluid {
+        padding: 30px;
+      }
+
+      #about {
+        background-color: #f7f9f9;
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      #about hr {
+        border: 2px solid #dee2e6;
+        width: 50%;
+        margin: 20px auto;
+      }
+
+      #about img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 5px solid #ffffff;
+        margin-top: 20px;
+      }
+
+      .skill {
+        background-color: #f4f6f7;
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      .sd {
+        display: inline-block;
+        color: #007bff;
+        text-align: center;
+        padding: 15px 30px;
+        text-decoration: none;
+        border: 2px solid #007bff;
+        border-radius: 25px;
+        margin: 10px;
+        background-color: #ffffff;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .sd:hover {
+        background-color: #f1f1f1;
+        transform: scale(1.05);
+      }
+
+      .contact {
+        padding: 40px 0;
+        text-align: center;
+        background-color: #f4f6f6;
+      }
+
+      .contact p {
+        font-size: 1.2rem;
+        color: #333;
+      }
+
+      footer {
+        background-color: #eaecee;
+        color: #333;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1>Som ol Kongkea</h1>
+        </div>
+        <div class="col-12 col-md-6">
+          <nav class="nav justify-content-center justify-content-md-end">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#project">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div id="about">
+        <section>
+          <h2>About Me</h2>
+          <img src="Yuro pf.jpg" alt="Profile Picture" />
+          <p>Hello Everyone, my name is Kongkea. Below are my skills.</p>
+        </section>
+      </div>
+
+      <div class="skill">
+        <h1>My Skills</h1>
+        <div class="d-flex flex-wrap justify-content-center">
+          <a class="sd" href="#webdeveloper">Web Developer</a>
+          <a class="sd" href="#graphicdesign">Graphic Design</a>
+          <a class="sd" href="#programmer">Programmer</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: somolkongkea@gmail.com</p>
+      <p>Phone Number: 096 *** *** / 085 *** ***</p>
+    </div>
+
+    <footer>
+      <p>Copyright © 2023<br />Kongkea</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
